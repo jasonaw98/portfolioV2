@@ -1,6 +1,10 @@
+import { Globe } from "@/components/Globe";
+import { About } from "@/components/About";
+import { Hero } from "@/components/Hero";
 import ToggleTheme from "@/components/toggle-theme";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { navItems } from "@/data";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -10,6 +14,9 @@ export default function Home() {
           <ToggleTheme />
         </FloatingNav>
       </div>
+      <Hero />
+      <About />
+      <Footer />
     </main>
   );
 }
