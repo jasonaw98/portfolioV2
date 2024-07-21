@@ -14,6 +14,7 @@ interface Props {
     name: string;
     link: string;
     icon?: JSX.Element;
+    target?: string;
   }[];
   className?: string;
   children?: React.ReactNode;
@@ -68,6 +69,7 @@ export const FloatingNav = ({
           <Link
             key={`link=${idx}`}
             href={navItem.link}
+            target={navItem.target}
             className={cn(
               "relative dark:text-neutral-50 items-center flex space-x-1 text-gray-800 font-semibold dark:hover:text-neutral-300 hover:text-neutral-500"
             )}
