@@ -1,4 +1,7 @@
 import { cn } from "@/lib/utils";
+import { BackgroundGradientAnimation } from "./background-gradient-animation";
+import MagicButton from "./MagicButton";
+import Link from "next/link";
 
 export const BentoGrid = ({
   className,
@@ -25,12 +28,14 @@ export const BentoGridItem = ({
   description,
   content,
   icon,
+  id,
 }: {
   className?: string;
   title?: string | React.ReactNode;
   description?: string | React.ReactNode;
   content?: React.ReactNode;
   icon?: React.ReactNode;
+  id?: number;
 }) => {
   return (
     <div
@@ -39,6 +44,41 @@ export const BentoGridItem = ({
         className
       )}
     >
+      {id === 6 && (
+        <div className="flex flex-col h-full">
+          <BackgroundGradientAnimation>
+            <div className="group-hover/bento:translate-x-2 transition duration-200 absolute z-50 inset-0 flex flex-col items-center justify-center text-white font-bold px-4 text-2xl text-center md:text-3xl lg:text-4xl">
+              <p className="bg-clip-text text-gray-200 drop-shadow-2xl">
+                Let's Chat!
+              </p>
+              <MagicButton
+              title={
+                <Link 
+                href={"https://calendar.app.google/baaaJJAC3USKgzi8A"}
+                target="blank"
+                className="relative group flex justify-center items-center overflow-hidden text-white font-bold rounded-full w-full h-full transition-all duration-500 ease-in-out">
+                  <div
+                    className={`flex w-full items-center justify-center transition-transform duration-500 ease-in-out group-hover:translate-x-full translate-x-0`}
+                  >
+                    <p>Book a call</p>
+                  </div>
+                  <div
+                    className={`absolute w-full inset-0 flex items-center justify-center transition-transform duration-500 ease-in-out group-hover:translate-x-0 -translate-x-full`}
+                  >
+                    <span role="img" aria-label="rocket" className="text-3xl">
+                      📅
+                    </span>
+                  </div>
+                </Link>
+              }
+            />
+            </div>
+          </BackgroundGradientAnimation>
+          <div className="absolute bottom-0">
+            
+          </div>
+        </div>
+      )}
       <div className="group-hover/bento:translate-x-2 transition duration-200">
         {icon}
         <div className="font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
@@ -47,7 +87,7 @@ export const BentoGridItem = ({
         <div className="font-sans font-normal text-neutral-600 text-xs dark:text-neutral-300">
           {description}
         </div>
-      {content}
+        {content}
       </div>
     </div>
   );
