@@ -1,4 +1,3 @@
-import { Globe } from "@/components/Globe";
 import { About } from "@/components/About";
 import { Hero } from "@/components/Hero";
 import ToggleTheme from "@/components/toggle-theme";
@@ -9,7 +8,7 @@ import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center">
+    <main className="min-h-screen flex flex-col items-center" id="home">
       <div className="relative w-full">
         <FloatingNav navItems={navItems}>
           <ToggleTheme />

@@ -24,16 +24,12 @@ const Footer = () => {
                 <Link
                   href={"mailto:jason_aw1998@hotmail.com"}
                   target="blank"
-                  className="relative group flex justify-center items-center overflow-hidden text-white font-bold rounded-full w-full h-full transition-all duration-500 ease-in-out"
+                  className="relative group flex justify-center items-center overflow-hidden text-white font-bold w-full h-full transition-all duration-500 ease-in-out"
                 >
-                  <div
-                    className={`flex w-full items-center justify-center transition-transform duration-500 ease-in-out group-hover:translate-x-full translate-x-0`}
-                  >
+                  <div className="flex w-full items-center justify-center transition-transform duration-500 ease-in-out group-hover:translate-x-full translate-x-0">
                     <p>Contact Me</p>
                   </div>
-                  <div
-                    className={`absolute w-full inset-0 flex items-center justify-center transition-transform duration-500 ease-in-out group-hover:translate-x-0 -translate-x-full`}
-                  >
+                  <div className="absolute w-full inset-0 flex items-center justify-center transition-transform duration-500 ease-in-out group-hover:translate-x-0 -translate-x-full">
                     <span role="img" aria-label="Email" className="text-3xl">
                       📧
                     </span>
@@ -46,16 +42,12 @@ const Footer = () => {
                 <Link
                   href={"https://calendar.app.google/baaaJJAC3USKgzi8A"}
                   target="blank"
-                  className="relative group flex justify-center items-center overflow-hidden text-white font-bold rounded-full w-full h-full transition-all duration-500 ease-in-out"
+                  className="relative group flex justify-center items-center overflow-hidden text-white font-bold w-full h-full transition-all duration-500 ease-in-out"
                 >
-                  <div
-                    className={`flex w-full items-center justify-center transition-transform duration-500 ease-in-out group-hover:translate-x-full translate-x-0`}
-                  >
+                  <div className="flex w-full items-center justify-center transition-transform duration-500 ease-in-out group-hover:translate-x-full translate-x-0">
                     <p>Book a call</p>
                   </div>
-                  <div
-                    className={`absolute w-full inset-0 flex items-center justify-center transition-transform duration-500 ease-in-out group-hover:translate-x-0 -translate-x-full`}
-                  >
+                  <div className="absolute w-full inset-0 flex items-center justify-center transition-transform duration-500 ease-in-out group-hover:translate-x-0 -translate-x-full">
                     <span role="img" aria-label="rocket" className="text-2xl">
                       📅
                     </span>

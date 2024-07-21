@@ -1,6 +1,7 @@
 import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 import { Globe } from "./Globe";
+import ButtonSnippet from "./ui/ButtonSnippet";
 
 export function About() {
   return (
@@ -9,7 +10,6 @@ export function About() {
         <BentoGridItem
           key={i}
           title={item.title}
-          description={item.description}
           content={item.content}
           className={item.className}
           id={item.id}
@@ -30,13 +30,13 @@ const items = [
     id: 6,
   },
   {
-    title: "The Art of Design",
-    className: "md:col-span-1 items-center text-3xl px-4 text-center relative overflow-hidden",
-    content: "Discover the beauty of thoughtful and functional design.",
+    title: "Code Snippet",
+    className: "md:col-span-1 items-center text-3xl px-4 text-center",
+    content: <ButtonSnippet/>,
   },
   {
-    title: "The Pursuit of Knowledge",
-    description: "Join the quest for understanding and enlightenment.",
-    className: "md:col-span-2 items-center text-3xl px-12 text-center relative overflow-hidden"
+    title: "My current Tech Stack and Toolkits",
+    className: "md:col-span-2 items-center text-3xl px-12 text-center relative overflow-hidden",
+    content: <ButtonSnippet/>,
   },
 ];
