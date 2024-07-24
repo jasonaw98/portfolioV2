@@ -24,7 +24,7 @@ export function ThreeDCard({
 }: CardDetails) {
   return (
     <CardContainer className="inter-var">
-      <CardBody className="flex flex-col bg-gradient-to-br from-neutral-200 dark:from-gray-800 dark:to-gray-900 to-neutral-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[25rem] h-auto sm:h-[30rem] rounded-2xl p-6 border">
+      <CardBody className="flex flex-col bg-gradient-to-br from-slate-300 dark:from-gray-800 dark:to-gray-900 to-slate-400 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:border-white/[0.2] border-slate-400 w-auto sm:w-[25rem] h-auto sm:h-[30rem] rounded-2xl p-6 border">
         <div className="flex flex-col h-full">
           <CardItem translateZ="80" className="w-full">
             <Image
@@ -44,7 +44,7 @@ export function ThreeDCard({
           <CardItem
             as="p"
             translateZ="70"
-            className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 flex-grow"
+            className="text-black text-sm max-w-sm mt-2 dark:text-neutral-300 flex-grow"
           >
             {description}
           </CardItem>
@@ -55,7 +55,7 @@ export function ThreeDCard({
                 tech.map((item) => (
                   <span
                     key={item}
-                    className="px-2 py-1 text-xs font-medium bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full"
+                    className="px-2 py-1 text-xs font-medium bg-gray-700 text-gray-200 rounded-full"
                   >
                     {item}
                   </span>

@@ -90,7 +90,7 @@ const Footer = () => {
               className="p-2 rounded-lg border-2 border-gray-500 flex cursor-pointer hover:border-white group"
             >
               <svg
-                className="w-6 h-6 text-gray-800 dark:text-white border border-gray-200 rounded-md group-hover:fill-blue-400 group-hover:border-blue-400"
+                className="w-6 h-6 text-white border border-gray-200 rounded-md group-hover:bg-blue-500 group-hover:border-blue-500"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

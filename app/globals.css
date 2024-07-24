@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Noto Color Emoji';
+  src: url('https://fonts.gstatic.com/s/notoColorEmoji/v1/NotoColorEmoji.ttf') format('truetype');
+}
+
+.emoji {
+  font-family: 'Noto Color Emoji', sans-serif;
+  font-style: normal;
+}
+
 @layer base {
     * {
       @apply !scroll-smooth;

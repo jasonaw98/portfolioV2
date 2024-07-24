@@ -17,7 +17,7 @@ const ButtonSnippet = () => {
     <div className="flex flex-col bg-gra-800 h-full justify-center items-center rounded-xl gap-8 text-lg">
       <button
         onClick={handleclick(buttonCode1)}
-        className="relative bg-blue-700 group flex justify-center items-center overflow-hidden text-white font-bold rounded-lg w-40 h-10 transition-all duration-500 ease-in-out"
+        className="relative border-2 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] border-slate-700 bg-[length:200%_100%] group flex justify-center items-center overflow-hidden text-white font-bold rounded-lg w-40 h-10 transition-all duration-500 ease-in-out"
       >
         <div className="flex w-full items-center justify-center transition-transform duration-500 ease-in-out group-hover:translate-x-full translate-x-0">
           <p>Hover Me</p>
@@ -29,7 +29,7 @@ const ButtonSnippet = () => {
 
       <button
         onClick={handleclick(buttonCode2)}
-        className="relative bg-blue-700 group flex justify-center items-center overflow-hidden text-white font-bold rounded-lg w-40 h-10 transition-all duration-300 ease-in-out"
+        className="relative border-2 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] border-slate-700 bg-[length:200%_100%] group flex justify-center items-center overflow-hidden text-white font-bold rounded-lg w-40 h-10 transition-all duration-300 ease-in-out"
       >
         <div className="flex w-full items-center justify-center transition-transform duration-300 ease-in-out group-hover:-translate-y-full translate-y-0">
           <p>Hover Me</p>
@@ -46,7 +46,7 @@ const ButtonSnippet = () => {
 export default ButtonSnippet;
 
 const buttonCode1: string = `<button
-        className="relative bg-blue-700 group flex justify-center items-center overflow-hidden text-white font-bold rounded-lg w-40 h-10 transition-all duration-500 ease-in-out"
+        className="relative border-2 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] border-slate-700 bg-[length:200%_100%] group flex justify-center items-center overflow-hidden text-white font-bold rounded-lg w-40 h-10 transition-all duration-500 ease-in-out"
       >
         <div className="flex w-full items-center justify-center transition-transform duration-500 ease-in-out group-hover:translate-x-full translate-x-0">
           <p>Hover Me</p>
@@ -57,7 +57,7 @@ const buttonCode1: string = `<button
       </button>`;
 
 const buttonCode2: string = ` <button
-        className="relative bg-blue-700 group flex justify-center items-center overflow-hidden text-white font-bold rounded-lg w-40 h-10 transition-all duration-500 ease-in-out"
+        className="relative border-2 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] border-slate-700 bg-[length:200%_100%] group flex justify-center items-center overflow-hidden text-white font-bold rounded-lg w-40 h-10 transition-all duration-500 ease-in-out"
       >
         <div className="flex w-full items-center justify-center transition-transform duration-300 ease-in-out group-hover:-translate-y-full translate-y-0">
           <p>Hover Me</p>
