@@ -3,6 +3,7 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextAnimate } from "./ui/text-animate";
 import { Typewriter } from "./ui/typewriter";
 import Link from "next/link";
+import IconRipple from "./ui/icon-ripple";
 
 export function Hero() {
   const texts = [
@@ -21,7 +22,7 @@ export function Hero() {
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"
       />
-      <div className="max-w-7xl w-full items-center flex flex-col gap-7">
+      <div className="max-w-7xl w-full items-center flex flex-col gap-10">
         <p className="bg-gradient-to-bl from-green-300 to to-blue-600 bg-clip-text text-transparent">
           TECH ENTHUSIAST WITH PASSION FOR DEVELOPMENT
         </p>
@@ -32,11 +33,11 @@ export function Hero() {
         />
         <div className="mt-2 py-2 inline-flex animate-shimmer items-center justify-center border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-300 transition-colors rounded-2xl">
           <div className="text-sm md:text-3xl font-semibold text-base-900">
-            <Typewriter texts={texts} delay={1} baseText="I'm a " />
+            <Typewriter texts={texts} delay={0.5} baseText="I'm a " />
           </div>
         </div>
 
-        <div className="flex gap-10">
+        <div className="flex gap-12 items-center">
           <Link
             href={"https://github.com/jasonaw98"}
             target="blank"
@@ -62,7 +63,7 @@ export function Hero() {
             className=" hover:-translate-y-2 ease-in-out transition-all duration-300"
           >
             <svg
-              className="w-10 h-10 text-white rounded-md group-hover:fill-blue-400 group-hover:border-blue-400"
+              className="w-9 h-9 text-black rounded-md bg-white"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -77,6 +78,9 @@ export function Hero() {
             </svg>
           </Link>
         </div>
+        <Link href={"#about"} className="pt-8">
+          <IconRipple />
+        </Link>
       </div>
     </div>
   );

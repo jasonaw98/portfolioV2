@@ -23,7 +23,7 @@ export function ThreeDCard({
   tech,
 }: CardDetails) {
   return (
-    <CardContainer className="inter-var">
+    <CardContainer className="">
       <CardBody className="flex flex-col bg-gradient-to-br from-slate-300 dark:from-gray-800 dark:to-gray-900 to-slate-400 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:border-white/[0.2] border-slate-400 w-auto sm:w-[25rem] h-auto sm:h-[30rem] rounded-2xl p-6 border">
         <div className="flex flex-col h-full">
           <CardItem translateZ="80" className="w-full">

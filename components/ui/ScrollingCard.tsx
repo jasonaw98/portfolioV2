@@ -1,35 +1,37 @@
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
-import Nextsvg from "../../public/logos/next.svg"
-import TailwindCSS from "@/public/logos/next";
+import TailwindCSS from "@/public/logos/tailwind";
+import Nextjs from "@/public/logos/next";
+import TypeScript from "@/public/logos/typescript";
+import Git from "@/public/logos/git";
+import Solidity from "@/public/logos/solidity";
+import Ethereum from "@/public/logos/eth";
+import Bun from "@/public/logos/bun";
+import Nodejs from "@/public/logos/node";
+import React from "@/public/logos/react";
+import Solana from "@/public/logos/solana";
+import Supabase from "@/public/logos/supabase";
 
 const ScrollingCard = () => {
   return (
-    <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-    <InfiniteMovingCards
-      items={testimonials}
-      direction="right"
-      speed="slow"
-    />
-    <InfiniteMovingCards
-      items={testimonials}
-      direction="left"
-      speed="slow"
-    />
-    <div><TailwindCSS/></div>
-  </div>
-  )
-}
+    <div className="h-full rounded-md flex flex-col antialiased items-center relative pt-2">
+      <InfiniteMovingCards items={components} direction="right" speed="slow" />
+      <InfiniteMovingCards items={components} direction="left" speed="slow" />
+    </div>
+  );
+};
 
-export default ScrollingCard
+export default ScrollingCard;
 
-const testimonials = [
-   "Nextjs",
-   "Tailwind",
-   "Typescript",
-   "Vercel",
-   "Git",
-   "NextAuth",
-   "Figma",
-   "GraphQL",
-   "Docker",
-  ];
+const components = [
+  <TailwindCSS className="h-8 w-8" />,
+  <Nextjs className="h-8 w-8" />,
+  <React className="h-8 w-8" />,
+  <TypeScript className="h-8 w-8" />,
+  <Supabase className="h-8 w-8" />,
+  <Nodejs className="h-8 w-8" />,
+  <Git className="h-8 w-8" />,
+  <Bun className="h-8 w-8" />,
+  <Solana className="h-8 w-8" />,
+  <Ethereum className="h-8 w-8" />,
+  <Solidity className="h-8 w-8" fill="white" />,
+];
