@@ -32,7 +32,7 @@ export const projects = [
     description: "A PWA drinking game app that you can enjoy with your friends and families.",
     link: "https://drinkgame.vercel.app/",
     gitlink: "https://github.com/jasonaw98/DrinkingGame",
-    image: "/penguin.png",
+    image: "/drinking.png",
     tech: ["Next.js", "Tailwind CSS", "Google Sheets"],
   },
   {
@@ -40,7 +40,7 @@ export const projects = [
     description: "My legacy portfolio.",
     link: "https://jason-aw-legacy.vercel.app/",
     gitlink: "https://github.com/jasonaw98/portfolio",
-    image: "/penguin.png",
+    image: "/portfolio.jpg",
     tech: ["Next.js", "Tailwind CSS", "Framer-motion"],
   },
   {
@@ -48,7 +48,7 @@ export const projects = [
     description: "A loan analysis tool that provides information on loan repayments, rebate settlements, and potential savings.",
     link: "https://loangraphia.vercel.app/",
     gitlink: "https://github.com/jasonaw98/LoanGraphia",
-    image: "/penguin.png",
+    image: "/loangraphia.png",
     tech: ["Next.js", "Tailwind CSS", "Chartjs"],
   },
   {
@@ -56,7 +56,7 @@ export const projects = [
     description: "Upload files to IPFS to make them immortal.",
     link: "https://ipfs-f-ile-uploader.vercel.app/",
     gitlink: "https://github.com/jasonaw98/IPFS-FIle-uploader",
-    image: "/penguin.png",
+    image: "/ipfsuploader.png",
     tech: ["Next.js", "Tailwind CSS", "IPFS", "NFT"],
   },
   {
@@ -64,7 +64,7 @@ export const projects = [
     description: "View and explore NFTs owned by address.",
     link: "https://solanaportfolio.vercel.app/",
     gitlink: "https://github.com/jasonaw98/Solana-nft-portfolio",
-    image: "/penguin.png",
+    image: "/solanaportfolio.png",
     tech: ["Next.js", "Tailwind CSS", "HelloMoon", "NFT"],
   },
 ];
