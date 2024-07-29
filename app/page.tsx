@@ -9,7 +9,7 @@ import Projectsvg from "@/public/icons/project";
 import Contactsvg from "@/public/icons/contact";
 import Resumesvg from "@/public/icons/resume";
 
-export const navItems = [
+const navItems = [
   {
     name: "Home",
     link: "#home",
