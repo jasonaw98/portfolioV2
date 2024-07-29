@@ -1,23 +1,3 @@
-export const navItems = [
-  {
-    name: "Home",
-    link: "#home",
-  },
-  {
-    name: "Projects",
-    link: "#projects",
-  },
-  {
-    name: "Contact",
-    link: "#footer",
-  },
-  {
-    name: "Resume",
-    link: "https://docs.google.com/document/d/1oEXGzW--eptZe6lKES0xDf436Kd9_7Jl7_Y_fiyW21Q/edit?usp=sharing",
-    target: "blank",
-  },
-];
-
 export const projects = [
   {
     title: "Pudgy Penguin NFT",

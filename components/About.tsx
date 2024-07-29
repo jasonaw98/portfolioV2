@@ -6,7 +6,7 @@ import ScrollingCard from "./ui/ScrollingCard";
 
 export function About() {
   return (
-    <div id="about" className="py-12">
+    <div id="about" className="py-12 px-10">
       <BentoGrid className="max-w-6xl mx-auto">
         {items.map((item, i) => (
           <BentoGridItem
@@ -26,11 +26,11 @@ const items = [
   {
     title: "I'm very flexible with time zone communications",
     className:
-      "md:col-span-2 items-center text-3xl px-12 text-center relative overflow-hidden",
+      "md:col-span-2 items-center text-3xl px-12 text-center relative overflow-hidden min-h-[15rem]",
     content: <Globe />,
   },
   {
-    className: "p-0 overflow-auto w-full h-full -space-y-4 md:col-span",
+    className: "p-0 overflow-auto w-full h-full -space-y-4 md:col-span- min-h-[15rem]",
     id: 6,
   },
   {

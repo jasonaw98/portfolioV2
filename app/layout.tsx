@@ -21,7 +21,7 @@ export default function RootLayout({
         rel="icon"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 10 100 100'><text y='.9em' font-size='110'>🧑‍💻</text></svg>"
       />
-      <body className={`${inter.className} bg-slate-200 dark:bg-[#05091ead]`}>
+      <body className={`${inter.className} bg-slate-100 dark:bg-[#05091ead]`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

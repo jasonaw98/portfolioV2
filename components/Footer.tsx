@@ -5,20 +5,20 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div className="flex flex-col w-full items-center" id="footer">
-      <div className="h-[40rem] w-full rounded-md flex md:items-center md:justify-center antialiased dark:bg-grid-white/[0.04] bg-grid-black/[0.04] relative overflow-hidden">
+      <div className="h-[40rem] w-full rounded-md flex items-center justify-center antialiased dark:bg-grid-white/[0.04] bg-grid-black/[0.04] relative overflow-hidden">
         <div
           className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black/70
-        bg-slate-200 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
+        bg-slate-100 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
         />
         <div className="flex flex-col items-center w-full max-w-5xl">
-          <h1 className="text-3xl md:text-5xl font-bold text-wra text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-wrap text-center text-neutral-800 dark:text-white px-8">
             Ready to talk and take it to the next level?
           </h1>
-          <p className="mt-12 text-gray-300 text-lg">
+          <p className="mt-8 dark:text-gray-300 text-sm sm:text-lg font-semibold text-neutral-700 px-10 text-center">
             Reach out to me today and let's discuss on how I can help to achieve
             your goals.
           </p>
-          <div className="gap-8 flex">
+          <div className="gap-8 flex mt-6">
             <MagicButton
               title={
                 <Link
@@ -59,19 +59,18 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="w-full justify-center items-center flex bg-[#05070f] pb-12">
-        <div className="w-full flex justify-between items-center max-w-7xl">
+      <div className="w-full justify-center items-center flex bg-slate-100 dark:bg-[#05070f] pb-12">
+        <div className="w-full flex justify-between items-center max-w-7xl px-10">
           <span>Copyright 2024 Jason Aw</span>
           <div className="flex gap-3">
             <Link
               href={"https://github.com/jasonaw98"}
               target="blank"
-              className="p-2 rounded-lg border-2 border-gray-500 flex cursor-pointer hover:border-white"
+              className="p-2 rounded-lg border-2 dark:border-gray-500 border-slate-500 flex cursor-pointer dark:hover:border-white hover:border-slate-700"
             >
               <svg
-                className="w-6 h-6"
+                className="w-6 h-6 fill-black dark:fill-white"
                 viewBox="0 0 256 250"
-                fill="#fff"
                 xmlns="http://www.w3.org/2000/svg"
                 preserveAspectRatio="xMidYMid"
               >
@@ -81,15 +80,14 @@ const Footer = () => {
             <Link
               href={"https://www.linkedin.com/in/jason-aw-han-wei/"}
               target="blank"
-              className="p-2 rounded-lg border-2 border-gray-500 flex cursor-pointer hover:border-white group"
+              className="p-2 rounded-lg border-2 dark:border-gray-500 border-slate-500 flex cursor-pointer dark:hover:border-white hover:border-slate-700 group"
             >
               <svg
-                className="w-6 h-6 text-white border border-gray-200 rounded-md group-hover:bg-blue-500 group-hover:border-blue-500"
+                className="w-6 h-6 text-white border-2 dark:border border-gray-600 dark:border-gray-200 rounded-md group-hover:bg-blue-500 group-hover:border-blue-500 group-hover:fill-white fill-gray-700 dark:fill-white"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
-                fill="currentColor"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -103,7 +101,7 @@ const Footer = () => {
             <Link
               href={"https://x.com/Jasonaw98"}
               target="blank"
-              className="p-2 rounded-lg border-2 border-gray-500 flex cursor-pointer hover:border-white group"
+              className="p-2 rounded-lg border-2 dark:border-gray-500 border-slate-500 flex cursor-pointer dark:hover:border-white hover:border-slate-700 group"
             >
               <svg
                 className="w-6 h-6 text-gray-800 dark:text-white group-hover:fill-blue-400"

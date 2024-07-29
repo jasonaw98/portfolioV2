@@ -46,14 +46,13 @@ export default function IconRipple({
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 -960 960 960"
-        fill="#e8eaed"
-        className="w-8 h-8"
+        className="w-8 h-8 fill-neutral-500 dark:fill-slate-300"
       >
         <path d="M480-200 240-440l56-56 184 183 184-183 56 56-240 240Zm0-240L240-680l56-56 184 183 184-183 56 56-240 240Z" />
       </svg>
       <div
-        className={cn("absolute -inset-4 animate-ping rounded-full border-2")}
-        style={{ ...customBorderStyle, ...insetStyle }}
+        className={cn("absolute -inset-4 animate-ping rounded-full border-2 border-neutral-300 dark:border-slate-300")}
+        style={{ ...insetStyle }}
       />
     </div>
   );

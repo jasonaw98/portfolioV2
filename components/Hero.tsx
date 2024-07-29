@@ -13,26 +13,26 @@ export function Hero() {
     "Software Engineer",
   ];
   return (
-    <div className="min-h-screen w-full rounded-md flex md:items-center md:justify-center antialiased dark:bg-grid-white/[0.04] bg-grid-black/[0.04] relative overflow-hidden">
+    <div className="min-h-screen w-full rounded-md flex items-center justify-center antialiased dark:bg-grid-white/[0.04] bg-grid-black/[0.03] relative overflow-hidden" id="home">
       <div
         className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black/70
-         bg-slate-200 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
+         bg-slate-100 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
       />
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"
       />
       <div className="max-w-7xl w-full items-center flex flex-col gap-10">
-        <p className="bg-gradient-to-bl from-green-300 to to-blue-600 bg-clip-text text-transparent">
+        <p className="bg-gradient-to-bl dark:from-green-300  dark:to-blue-600 from-gray-400 to-gray-600 bg-clip-text text-transparent font-semibold text-center">
           TECH ENTHUSIAST WITH PASSION FOR DEVELOPMENT
         </p>
         <TextAnimate
           text="Hey there I'm Jason "
           type="popIn"
-          className="tracking-wide text-3xl md:text-6xl font-bold text-center"
+          className="tracking-wide text-3xl md:text-6xl font-bold text-center text-gray-700 dark:text-white"
         />
         <div className="mt-2 py-2 inline-flex animate-shimmer items-center justify-center border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-300 transition-colors rounded-2xl">
-          <div className="text-sm md:text-3xl font-semibold text-base-900">
+          <div className="text-sm md:text-3xl font-semibold">
             <Typewriter texts={texts} delay={0.5} baseText="I'm a " />
           </div>
         </div>
@@ -44,7 +44,7 @@ export function Hero() {
             className=" hover:-translate-y-2 ease-in-out transition-all duration-300"
           >
             <svg
-              className="w-10 h-10 text-gray-800 dark:text-white"
+              className="w-10 h-10 text-black dark:text-white"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -63,10 +63,9 @@ export function Hero() {
             className=" hover:-translate-y-2 ease-in-out transition-all duration-300"
           >
             <svg
-              className="w-9 h-9 text-black rounded-md bg-white"
+              className="w-9 h-9 dark:text-black fill-white dark:fill-black rounded-md dark:bg-white bg-black"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
               viewBox="0 0 24 24"
             >
               <path

@@ -40,7 +40,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-transparent dark:border-white/[0.2] bg-slate-300 border border-gray-400 justify-between flex flex-col space-y-4",
+        "row-span-1 rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-transparent dark:border-white/[0.2] bg-transparent border border-gray-300 justify-between drop-shadow-xl shadow-xl flex flex-col space-y-4",
         className
       )}
     >
@@ -48,7 +48,7 @@ export const BentoGridItem = ({
         <div className="flex flex-col h-full">
           <BackgroundGradientAnimation>
             <div className="group-hover/bento:translate-x-2 transition duration-200 absolute z-50 inset-0 flex flex-col items-center justify-center text-white font-bold px-4 text-2xl text-center md:text-3xl lg:text-4xl">
-              <p className="bg-clip-text text-gray-200 drop-shadow-2xl">
+              <p className="bg-clip-text text-gray-200 drop-shadow-2xl mb-4">
                 Let's Chat!
               </p>
               <MagicButton
@@ -80,8 +80,7 @@ export const BentoGridItem = ({
         </div>
       )}
       <div className="group-hover/bento:translate-x-2 transition duration-200">
-        {icon}
-        <div className="font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
+        <div className="font-sans font-bold text-neutral-700 dark:text-neutral-200 mb-2 mt-2">
           {title}
         </div>
         <div className="font-sans font-normal text-neutral-600 text-xs dark:text-neutral-300">
