@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ui/theme-provider";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +18,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://jasonaw.vercel.app/" />
+        <meta property="og:title" content="Jason Aw " />
+        <meta property="og:description" content="Welcome to my portfolio" />
+        <meta property="og:image" content="/ogimage.png" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://jasonaw.vercel.app/" />
+        <meta property="twitter:title" content="Jason Aw " />
+        <meta
+          property="twitter:description"
+          content="Welcome to my portfolio"
+        />
+        <meta property="twitter:image" content="/ogimage.png" />
+      </head>
       <link
         rel="icon"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 10 100 100'><text y='.9em' font-size='110'>🧑‍💻</text></svg>"
