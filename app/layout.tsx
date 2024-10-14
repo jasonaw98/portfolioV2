@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import { Analytics } from "@vercel/analytics/react";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <Script
+          defer
+          src="https://umami-analytics-gules.vercel.app/script.js"
+          data-website-id="fb708083-5417-4766-8af3-b66ccfda14ad"
+        />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://jasonaw.vercel.app/" />
         <meta property="og:title" content="Jason Aw " />
