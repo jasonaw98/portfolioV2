@@ -16,6 +16,7 @@ const ButtonSnippet = () => {
   return (
     <div className="flex flex-col bg-gra-800 h-full justify-start md:justify-center items-center rounded-xl gap-8 text-lg">
       <button
+        data-umami-event="copy-first-button"
         onClick={handleclick(buttonCode1)}
         className="relative border-2 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] border-slate-700 bg-[length:200%_100%] group flex justify-center items-center overflow-hidden text-white font-bold rounded-lg w-40 h-10 transition-all duration-500 ease-in-out"
       >
@@ -28,6 +29,7 @@ const ButtonSnippet = () => {
       </button>
 
       <button
+        data-umami-event="copy-second-button"
         onClick={handleclick(buttonCode2)}
         className="relative border-2 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] border-slate-700 bg-[length:200%_100%] group flex justify-center items-center overflow-hidden text-white font-bold rounded-lg w-40 h-10 transition-all duration-300 ease-in-out"
       >
@@ -38,7 +40,9 @@ const ButtonSnippet = () => {
           <span className="text-2xl">😎</span>
         </div>
       </button>
-      <span className="dark:font-semibold text-base text-neutral-600 dark:text-slate-200 font-bold">{Copied}</span>
+      <span className="dark:font-semibold text-base text-neutral-600 dark:text-slate-200 font-bold">
+        {Copied}
+      </span>
     </div>
   );
 };

@@ -13,7 +13,10 @@ export function Hero() {
     "Software Engineer",
   ];
   return (
-    <div className="min-h-screen w-full rounded-md flex items-center justify-center antialiased dark:bg-grid-white/[0.04] bg-grid-black/[0.03] relative overflow-hidden" id="home">
+    <div
+      className="min-h-screen w-full rounded-md flex items-center justify-center antialiased dark:bg-grid-white/[0.04] bg-grid-black/[0.03] relative overflow-hidden"
+      id="home"
+    >
       <div
         className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black/70
          bg-slate-100 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
@@ -39,6 +42,7 @@ export function Hero() {
 
         <div className="flex gap-12 items-center">
           <Link
+            data-umami-event="vist-github"
             href={"https://github.com/jasonaw98"}
             target="blank"
             className=" hover:-translate-y-2 ease-in-out transition-all duration-300"
@@ -58,6 +62,7 @@ export function Hero() {
             </svg>
           </Link>
           <Link
+            data-umami-event="vist-linkedIn"
             href={"https://www.linkedin.com/in/jason-aw-han-wei/"}
             target="blank"
             className=" hover:-translate-y-2 ease-in-out transition-all duration-300"

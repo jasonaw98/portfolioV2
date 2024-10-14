@@ -20,11 +20,7 @@ interface Props {
   children?: React.ReactNode;
 }
 
-export const FloatingNav = ({
-  navItems,
-  className,
-  children,
-}: Props) => {
+export const FloatingNav = ({ navItems, className, children }: Props) => {
   const { scrollYProgress } = useScroll();
 
   const [visible, setVisible] = useState(true);
@@ -67,6 +63,7 @@ export const FloatingNav = ({
       >
         {navItems.map((navItem: any, idx: number) => (
           <Link
+            data-umami-event={navItem.name}
             key={`link=${idx}`}
             href={navItem.link}
             target={navItem.target}

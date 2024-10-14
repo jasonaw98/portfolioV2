@@ -22,6 +22,7 @@ const Footer = () => {
             <MagicButton
               title={
                 <Link
+                  data-umami-event="email me"
                   href={"mailto:jason_aw1998@hotmail.com"}
                   target="blank"
                   className="relative group flex justify-center items-center overflow-hidden text-white font-bold w-full h-full transition-all duration-500 ease-in-out"
@@ -40,6 +41,7 @@ const Footer = () => {
             <MagicButton
               title={
                 <Link
+                  data-umami-event="book-a-call-bottom"
                   href={"https://calendar.app.google/baaaJJAC3USKgzi8A"}
                   target="blank"
                   className="relative group flex justify-center items-center overflow-hidden text-white font-bold w-full h-full transition-all duration-500 ease-in-out"
@@ -64,6 +66,7 @@ const Footer = () => {
           <span>Copyright 2024 Jason Aw</span>
           <div className="flex gap-3">
             <Link
+              data-umami-event="visit github"
               href={"https://github.com/jasonaw98"}
               target="blank"
               className="p-2 rounded-lg border-2 dark:border-gray-500 border-slate-500 flex cursor-pointer dark:hover:border-white hover:border-slate-700"
@@ -78,6 +81,7 @@ const Footer = () => {
               </svg>
             </Link>
             <Link
+              data-umami-event="visit linkedin"
               href={"https://www.linkedin.com/in/jason-aw-han-wei/"}
               target="blank"
               className="p-2 rounded-lg border-2 dark:border-gray-500 border-slate-500 flex cursor-pointer dark:hover:border-white hover:border-slate-700 group"
@@ -99,6 +103,7 @@ const Footer = () => {
               </svg>
             </Link>
             <Link
+              data-umami-event="visit twitter"
               href={"https://x.com/Jasonaw98"}
               target="blank"
               className="p-2 rounded-lg border-2 dark:border-gray-500 border-slate-500 flex cursor-pointer dark:hover:border-white hover:border-slate-700 group"
