@@ -5,7 +5,7 @@ const ToggleTheme = () => {
   const { theme, setTheme } = useTheme();
 
   return (
-    <div className="">
+    <div >
       <button
         className="flex items-center"
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
