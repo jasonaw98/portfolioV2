@@ -48,9 +48,9 @@ export const BentoGridItem = ({
         <div className="flex flex-col h-full">
           <BackgroundGradientAnimation>
             <div className="group-hover/bento:translate-x-2 transition duration-200 absolute z-50 inset-0 flex flex-col items-center justify-center text-white font-bold px-4 text-2xl text-center md:text-3xl lg:text-4xl">
-              <p className="bg-clip-text text-gray-200 drop-shadow-2xl mb-4">
+              <div className="bg-clip-text text-gray-200 drop-shadow-2xl mb-4">
                 Let's Chat!
-              </p>
+              </div>
               <MagicButton
               title={
                 <Link 
@@ -61,7 +61,7 @@ export const BentoGridItem = ({
                   <div
                     className="flex w-full items-center justify-center transition-transform duration-500 ease-in-out group-hover:translate-x-full translate-x-0"
                   >
-                    <p>Book a call</p>
+                    <div>Book a call</div>
                   </div>
                   <div
                     className="absolute w-full inset-0 flex items-center justify-center transition-transform duration-500 ease-in-out group-hover:translate-x-0 -translate-x-full"
